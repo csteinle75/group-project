@@ -68,6 +68,7 @@ header {
 }
 #sidePics{
 	width: 25%;
+	margin-right: 20px;
 }
 #lastsection{
 	display: flex;
@@ -78,3 +79,38 @@ header {
 #map{
 	width: 50%;	
 }
+.foodpics {
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+}
+#foodpic1 {
+	background-image: url("assets/duckfingerlings.jpg");
+}
+#foodpic2 {
+	background-image: url("assets/salad.jpg");
+	margin: 5px 0px;
+}
+#foodpic3 {
+	background-image: url("assets/seafoodbisque.png");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
