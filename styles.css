@@ -1,0 +1,80 @@
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+header {
+	display: flex;
+	width: 100%;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	height: 100px;
+}
+#logo {
+	width: 50%;
+	position: relative;
+}
+#logo > div {
+	display: inline-block;
+	background-image: url("assets/logo.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 75px;
+	height: 75px;
+	margin-left: 40px;
+}
+#logo > span {
+	position: absolute;
+	left: 30px;
+	top: 65px;
+}
+#social {
+	width: 50%;
+}
+
+#firstsection {
+	width: 100%;	
+	display: flex;
+	flex-flow: row wrap;
+	margin-bottom: 50px
+}
+
+#mainPic {
+	background-image: url("assets/mainpic.jpg");
+	background-size: cover;
+	background-position: 50% 70%;
+	width: 100%;
+	height: 400px;
+	margin-bottom: 40px;
+}
+
+#about{
+	width: 50%;
+	padding: 0 20px;
+}
+#news {
+	width: 50%;
+	padding: 0 20px;
+}
+#mainsection{
+	display: flex;
+}
+#menu{
+	width: 75%;
+}
+#sidePics{
+	width: 25%;
+}
+#lastsection{
+	display: flex;
+}
+#review{
+	width: 50%;
+}
+#map{
+	width: 50%;	
+}
