@@ -93,6 +93,33 @@ header {
 #menu{
 	width: 75%;
 }
+#menusection{
+	display: flex;
+	flex-flow: column wrap;
+	padding: 10px;
+}
+.courseTitles{
+	text-transform: capitalize;
+	border-bottom: 1px solid #999
+}
+.menuItemContainer{
+
+}
+#special{
+
+}
+
+.menuItemName{
+	font-size: 16px;
+}
+.menuItemDescription{
+	margin: 0;
+	display: inline-block;
+	width: 70%;
+}
+.menuItemAlerts{
+	display: inline-block;
+}
 #sidePics{
 	width: 25%;
 	margin-right: 20px;
