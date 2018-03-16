@@ -181,6 +181,92 @@ footer {
 label {
 	display: block;
 }
+.allergies {
+	background-image: url("assets/allergy.svg");
+	width: 75px;
+	height: 75px;
+	background-repeat: no-repeat;
+	position: relative;
+	display: inline-block;
+}
+
+.allergiestext {
+	width: 400px;
+	height: 50px;
+	position: absolute;
+	z-index: 1;
+	top: -10px;
+	left: 60px;
+	visibility: hidden;
+}
+.allergies:hover .allergiestext {
+	visibility: visible;
+}
+.favorites {
+	background-image: url("assets/favorite.svg");
+	width: 75px;
+	height: 75px;
+	background-repeat: no-repeat;
+	position: relative;
+	display: inline-block;
+}
+
+.favoritestext {
+	width: 400px;
+	height: 50px;
+	position: absolute;
+	z-index: 1;
+	top: -10px;
+	left: 60px;
+	visibility: hidden;
+}
+.favorites:hover .favoritestext {
+	visibility: visible;
+}
+.spicy {
+	background-image: url("assets/spicy.svg");
+	width: 75px;
+	height: 75px;
+	background-repeat: no-repeat;
+	position: relative;
+	display: inline-block;
+}
+
+.spicytext {
+	width: 400px;
+	height: 50px;
+	position: absolute;
+	z-index: 1;
+	top: -10px;
+	left: 60px;
+	visibility: hidden;
+}
+.spicy:hover .spicytext {
+	visibility: visible;
+}
+.vegan {
+	background-image: url("assets/vegan.svg");
+	width: 75px;
+	height: 75px;
+	background-repeat: no-repeat;
+	position: relative;
+	display: inline-block;
+}
+
+.vegantext {
+	width: 400px;
+	height: 50px;
+	position: absolute;
+	z-index: 1;
+	top: -10px;
+	left: 60px;
+	visibility: hidden;
+	background-color: black;
+	color: white;
+}
+.vegan:hover .vegantext {
+	visibility: visible;
+}
 
 
 
