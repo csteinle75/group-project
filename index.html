@@ -35,7 +35,22 @@
 	</div>
 	<div id="lastsection">
 		<div id="review">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quam delectus vero inventore tempore magni impedit reprehenderit illum quidem exercitationem aspernatur, consequuntur maxime rem quod aut sapiente, asperiores dolore ea!
+			<div id="disqus_thread"></div>
+
+				<script>         //discus line 40-52 
+				var disqus_config = function () {
+				this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+				this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+				};
+				(function() { // DON'T EDIT BELOW THIS LINE
+				var d = document, s = d.createElement('script');
+				s.src = 'https://coolrestaurant.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+				})();
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
 		</div>
 		<div id="map">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus reprehenderit rerum, corporis quos non aliquam, nam culpa porro voluptas quia sapiente nostrum doloribus iusto dolor hic natus, quod amet animi.
@@ -44,6 +59,10 @@
 	<footer>
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, cumque quis! Perspiciatis voluptates placeat autem rem distinctio nihil corporis temporibus molestias velit, exercitationem optio natus, aut eius, magni saepe cupiditate.
 	</footer>
+
+	<script id="dsq-count-scr" src="//coolrestaurant.disqus.com/count.js" async></script> <!--discus added-->
+
+
 	<script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
