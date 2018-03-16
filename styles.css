@@ -75,6 +75,7 @@ header {
 }
 #review{
 	width: 50%;
+	margin: 20px;
 }
 #map{
 	width: 50%;	
@@ -94,7 +95,11 @@ header {
 #foodpic3 {
 	background-image: url("assets/seafoodbisque.png");
 }
-
+footer {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 20px;
+}
 
 
 
