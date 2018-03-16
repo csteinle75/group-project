@@ -100,11 +100,15 @@ header {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
+	padding: 20px;
+}
+#map ul {
+	list-style: none;
+	padding-left: 20px;
 }
 #gmap{
 	border: 1px solid #888;
 	border-radius: 1px;
-	margin: 20px
 }
 footer {
 	width: 100%;

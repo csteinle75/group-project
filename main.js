@@ -4,7 +4,6 @@ $(document).ready(function(){
 	var newsObj = {}
 	$.get('https://json-data.herokuapp.com/restaurant/news/1', function(data){
 		newsObj = data
-		console.log(newsObj)
 	}).done(function(){
 		newsHTML.innerHTML = `
 		<h3>${newsObj.title}</h3>
@@ -12,5 +11,5 @@ $(document).ready(function(){
 		<p>${newsObj.post}</p>
 	`		
 	})
-	
+
 })
