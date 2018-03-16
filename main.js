@@ -29,10 +29,18 @@ $(document).ready(function(){
 						<div>
 							<p class="menuItemDescription">${food.description}</p>
 							<div class="menuItemAlerts">
-								<span class="allergies"></span>
-								<span class="favorites"></span>
-								<span class="spicy"></span>
-								<span class="vegan"></span>
+								<span class="allergies">
+									<p class="allergiestext"> This item may contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance.</p>
+								</span>
+								<span class="favorites">
+									<p class="favoritestext">We have been doing this a long time and this item has become one of our favorites.</p>
+								</span>
+								<span class="spicy">
+									<p class="spicytext">This item is spicy, please handle with care and drink lots of water.</p>
+								</span>
+								<span class="vegan">
+									<p class="vegantext">This item contains no meat and has been prepared without the use of animal products</p>
+								</span>
 							</div>
 						</div>
 					</div>
