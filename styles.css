@@ -92,6 +92,13 @@ header {
 }
 #menu{
 	width: 75%;
+	display: flex;
+}
+#reservations {
+	width: 50%;
+}
+#miscinfo {
+	width: 50%;
 }
 #sidePics{
 	width: 25%;
