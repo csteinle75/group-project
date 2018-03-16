@@ -96,7 +96,6 @@ header {
 }
 #reservations {
 	width: 50%;
-	display: flex;
 }
 #restitlediv {
 width: 100%;
@@ -108,10 +107,12 @@ width: 100%;
 	width: 100%;
 }
 #monthdiv {
-	width: 50%;
+	width: 49%;
+	display: inline-block;
 }
 #datediv {
 	width: 50%;
+	display: inline-block;
 }
 #time {
 	width: 100%;
