@@ -102,6 +102,7 @@ width: 100%;
 }
 #partydiv {
 	width: 100%;
+	text-align: center;
 }
 #partysize {
 	width: 100%;
@@ -109,16 +110,22 @@ width: 100%;
 #monthdiv {
 	width: 49%;
 	display: inline-block;
+	text-align: center;
 }
 #datediv {
 	width: 50%;
 	display: inline-block;
+	text-align: center;
+}
+#timediv	{
+	text-align: center;
 }
 #time {
 	width: 100%;
 }
 #resbutton {
 	width: 100%;
+	text-align: center;
 }
 #miscinfo {
 	width: 50%;
@@ -171,9 +178,9 @@ footer {
 	text-align: center;
 	padding-bottom: 20px;
 }
-
-
-
+label {
+	display: block;
+}
 
 
 

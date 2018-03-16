@@ -33,8 +33,9 @@
 				<div id="restitlediv"><h2>Make a Reservation</h2></div>
 				<div id="partydiv">
 					<label for="partysize">Party Size</label>
-					<select id="partysize" name="partysize">
+					<select id="partysize" name="partysize" style="cursor: pointer;">
 						<option selected disabled="">Choose Size</option>
+						<option value="1">1 &#9785</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
 						<option value="4">4</option>
@@ -47,7 +48,7 @@
 				<div>
 					<div id="monthdiv">
 						<label for="month">Month</label>
-						<select id="month" name="month">
+						<select id="month" name="month" style="cursor: pointer;">
 							<option selected disabled="">Choose Month</option>
 							<option value="janurary">Janurary</option>
 							<option value="feburary">Feburary</option>
@@ -65,7 +66,7 @@
 					</div>
 					<div id="datediv">
 						<label for="date">Date</label>
-						<select id="date" name="date">
+						<select id="date" name="date" style="cursor: pointer;">
 							<option selected disabled="">Choose Date</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -101,9 +102,9 @@
 						</select>
 					</div>
 				</div>
-				<div>
+				<div id="timediv">
 					<label for="time">Time</label>
-					<select id="time" name="time">
+					<select id="time" name="time" style="cursor: pointer;">
 						<option selected disabled="">Choose Time</option>
 						<option value="4pm">4:00pm</option>
 						<option value="5pm">5:00pm</option>
@@ -117,7 +118,7 @@
 				</div>
 
 				<div id="resbutton">
-					<button>Make Reservation</button>
+					<button style="cursor: pointer;">Make Reservation</button>
 				</div>
 			</div>
 			<div id="miscinfo">
