@@ -96,6 +96,28 @@ header {
 }
 #reservations {
 	width: 50%;
+	display: flex;
+}
+#restitlediv {
+width: 100%;
+}
+#partydiv {
+	width: 100%;
+}
+#partysize {
+	width: 100%;
+}
+#monthdiv {
+	width: 50%;
+}
+#datediv {
+	width: 50%;
+}
+#time {
+	width: 100%;
+}
+#resbutton {
+	width: 100%;
 }
 #miscinfo {
 	width: 50%;
