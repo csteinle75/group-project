@@ -21,7 +21,7 @@ $(document).ready(function(){
 	}).done(function(){
 		console.log('menu success')		
 		for( const course in menuObj ){
-			menuHTML.append(`<div id=${course}><h2 class="courseTitles">${course}</h2></div>`)
+			menuHTML.append(`<div id=${course}><h2 class="courseTitles">${course}</h2></div>`) //titles each course
 			menuObj[course].forEach(food => 
 				{$(`#${course}`).append(`
 					<div class="menuItemContainer">
@@ -29,10 +29,10 @@ $(document).ready(function(){
 						<div>
 							<p class="menuItemDescription">${food.description}</p>
 							<div class="menuItemAlerts">
-								<span>placeholder</span>
-								<span>placeholder</span>
-								<span>placeholder</span>
-								<span>placeholder</span>
+								<span class="allergies"></span>
+								<span class="favorites"></span>
+								<span class="spicy"></span>
+								<span class="vegan"></span>
 							</div>
 						</div>
 					</div>
