@@ -30,9 +30,10 @@
 	<div id="mainsection">
 		<div id="menu">
 			<div id="menusection">
-				<!-- Content inserted from JS -->
+				<!-- Menu Items inserted from JS -->
 			</div>
-			<!-- <div style="display: flex">
+
+			<div id="reservationsection">
 				<div id="reservations">
 					<div id="restitlediv"><h2>Make a Reservation</h2></div>
 					<div id="partydiv">
@@ -40,39 +41,6 @@
 						<select id="partysize" name="partysize" style="cursor: pointer;">
 							<option selected disabled="">Choose Size</option>
 							<option value="1">1 &#9785</option>		
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-					</select>
-				</div>
-				<div>
-					<div id="monthdiv">
-						<label for="month">Month</label>
-						<select id="month" name="month" style="cursor: pointer;">
-							<option selected disabled="">Choose Month</option>
-							<option value="janurary">Janurary</option>
-							<option value="feburary">Feburary</option>
-							<option value="march">March</option>
-							<option value="april">April</option>
-							<option value="may">May</option>
-							<option value="june">June</option>
-							<option value="july">July</option>
-							<option value="august">August</option>
-							<option value="september">September</option>
-							<option value="october">October</option>
-							<option value="november">November</option>
-							<option value="december">December</option>
-						</select>
-					</div>
-					<div id="datediv">
-						<label for="date">Date</label>
-						<select id="date" name="date" style="cursor: pointer;">
-							<option selected disabled="">Choose Date</option>
-							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
 							<option value="4">4</option>
@@ -113,91 +81,124 @@
 								<option value="6">6</option>
 								<option value="7">7</option>
 								<option value="8">8</option>
-								<option value="2">9</option>
-								<option value="2">10</option>
-								<option value="2">11</option>
-								<option value="2">12</option>
-								<option value="2">13</option>
-								<option value="2">14</option>
-								<option value="2">15</option>
-								<option value="2">16</option>
-								<option value="2">17</option>
-								<option value="2">18</option>
-								<option value="2">19</option>
-								<option value="2">20</option>
-								<option value="2">21</option>
-								<option value="2">22</option>
-								<option value="2">23</option>
-								<option value="2">24</option>
-								<option value="2">25</option>
-								<option value="2">26</option>
-								<option value="2">27</option>
-								<option value="2">28</option>
-								<option value="2">29</option>
-								<option value="2">30</option>
-								<option value="2">31</option>
 							</select>
 						</div>
-					</div>
-					<div id="timediv">
-						<label for="time">Time</label>
-						<select id="time" name="time" style="cursor: pointer;">
-							<option selected disabled="">Choose Time</option>
-							<option value="4pm">4:00pm</option>
-							<option value="5pm">5:00pm</option>
-							<option value="6pm">6:00pm</option>
-							<option value="7pm">7:00pm</option>
-							<option value="8pm">8:00pm</option>
-							<option value="9pm">9:00pm</option>
-							<option value="10pm">10:00pm</option>
-						</select>
+						<div>
+							<div id="monthdiv">
+								<label for="month">Month</label>
+								<select id="month" name="month" style="cursor: pointer;">
+									<option selected disabled="">Choose Month</option>
+									<option value="janurary">Janurary</option>
+									<option value="feburary">Feburary</option>
+									<option value="march">March</option>
+									<option value="april">April</option>
+									<option value="may">May</option>
+									<option value="june">June</option>
+									<option value="july">July</option>
+									<option value="august">August</option>
+									<option value="september">September</option>
+									<option value="october">October</option>
+									<option value="november">November</option>
+									<option value="december">December</option>
+								</select>
+							</div>
+							<div id="datediv">
+								<label for="date">Date</label>
+								<select id="date" name="date" style="cursor: pointer;">
+									<option selected disabled="">Choose Date</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="2">9</option>
+									<option value="2">10</option>
+									<option value="2">11</option>
+									<option value="2">12</option>
+									<option value="2">13</option>
+									<option value="2">14</option>
+									<option value="2">15</option>
+									<option value="2">16</option>
+									<option value="2">17</option>
+									<option value="2">18</option>
+									<option value="2">19</option>
+									<option value="2">20</option>
+									<option value="2">21</option>
+									<option value="2">22</option>
+									<option value="2">23</option>
+									<option value="2">24</option>
+									<option value="2">25</option>
+									<option value="2">26</option>
+									<option value="2">27</option>
+									<option value="2">28</option>
+									<option value="2">29</option>
+									<option value="2">30</option>
+									<option value="2">31</option>
+								</select>
+							</div>
+						</div>
+						<div id="timediv">
+							<label for="time">Time</label>
+							<select id="time" name="time" style="cursor: pointer;">
+								<option selected disabled="">Choose Time</option>
+								<option value="4pm">4:00pm</option>
+								<option value="5pm">5:00pm</option>
+								<option value="6pm">6:00pm</option>
+								<option value="7pm">7:00pm</option>
+								<option value="8pm">8:00pm</option>
+								<option value="9pm">9:00pm</option>
+								<option value="10pm">10:00pm</option>
+							</select>
+
+						</div>
+
+						<div id="resbutton">
+							<button style="cursor: pointer;">Make Reservation</button>
+						</div>
+
+						<div class="allergies">
+							<p class="allergiestext">This item may contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance.</p>
+						</div>
+						<div class="favorites">
+							<p class="favoritestext">We have been doing this a long time and this item has become one of our favorites.</p>
+						</div>
+						<div class="spicy">
+							<p class="spicytext">This item is spicy, please handle with care and drink lots of water.</p>
+						</div>
+						<div class="vegan">
+							<p class="vegantext">This item contains no meat and has been prepared without the use of animal products</p>
+						</div>
 
 					</div>
-
-					<div id="resbutton">
-						<button style="cursor: pointer;">Make Reservation</button>
-					</div>
-
-					<div class="allergies">
-						<p class="allergiestext">This item may contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance.</p>
-					</div>
-					<div class="favorites">
-						<p class="favoritestext">We have been doing this a long time and this item has become one of our favorites.</p>
-					</div>
-					<div class="spicy">
-						<p class="spicytext">This item is spicy, please handle with care and drink lots of water.</p>
-					</div>
-					<div class="vegan">
-						<p class="vegantext">This item contains no meat and has been prepared without the use of animal products</p>
-					</div>
-
-			</div>
-			<div id="miscinfo">
-				<div id="dininglogo"></div>
-				<div>
-					<h3>Dining Style</h3>
-					<span>Casual Elegant</span>
-				</div>
-				<div id="cuisinelogo"></div>
-				<div>
-					<h3>Cuisine</h3>
-					<span>Authentic K'un L'un</span>
 				
-					</div>
-					<div id="dresslogo"></div>
-					<div>
-						<h3>Dress code</h3>
-						<span>Business Casual</span>
-					</div>
-					<div id="paymentlogo"></div>
-					<div>
-						<h3>Payment Options</h3>
-						<span>AMEX, Mastercard, Discover, Visa or EBT</span>
-					</div>
 				</div>
-			</div> -->
-<!-- LOOK HERE IF PROBLEM -->
-			</div>
+				<div id="miscinfo">
+					<div id="dininglogo"></div>
+					<div>
+						<h3>Dining Style</h3>
+						<span>Casual Elegant</span>
+					</div>
+					<div id="cuisinelogo"></div>
+					<div>
+						<h3>Cuisine</h3>
+						<span>Authentic K'un L'un</span>
+					
+						</div>
+						<div id="dresslogo"></div>
+						<div>
+							<h3>Dress code</h3>
+							<span>Business Casual</span>
+						</div>
+						<div id="paymentlogo"></div>
+						<div>
+							<h3>Payment Options</h3>
+							<span>AMEX, Mastercard, Discover, Visa or EBT</span>
+						</div>
+					</div>
+			</div> <!--Reservation Section End-->
 		</div>
 		<div id="sidePics">
 			<div class="foodpics" id="foodpic1"></div>

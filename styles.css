@@ -92,7 +92,6 @@ header {
 }
 #menu{
 	width: 75%;
-	display: flex;
 }
 #reservations {
 	width: 50%;
@@ -207,6 +206,9 @@ footer {
 }
 label {
 	display: block;
+}
+#reservationsection{
+	display: flex;
 }
 .allergies {
 	background-image: url("assets/allergy.svg");
