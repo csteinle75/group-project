@@ -217,15 +217,31 @@ label {
 	background-repeat: no-repeat;
 	position: relative;
 	display: inline-block;
+	background-position: 10px 10px;
 }
-
+.allergiestext:before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 10px 12px 10px;
+	border-color: transparent transparent #000 transparent;
+	position: absolute;
+	top: -12px;
+	left: 348px;
+}
 .allergiestext {
 	width: 400px;
-	height: 50px;
+	height: 65px;
 	position: absolute;
 	z-index: 1;
-	top: -10px;
-	left: 60px;
+	top: 50px;
+	left: -325px;
+	background-color: lightblue;
+	color: white;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 5px 10px;
 	visibility: hidden;
 }
 .allergies:hover .allergiestext {
@@ -238,15 +254,31 @@ label {
 	background-repeat: no-repeat;
 	position: relative;
 	display: inline-block;
+	background-position: 10px 10px;
 }
-
+.favoritestext:before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 10px 12px 10px;
+	border-color: transparent transparent #000 transparent;
+	position: absolute;
+	top: -12px;
+	left: 348px;
+}
 .favoritestext {
 	width: 400px;
 	height: 50px;
 	position: absolute;
 	z-index: 1;
-	top: -10px;
-	left: 60px;
+	top: 50px;
+	left: -325px;
+	background-color: lightblue;
+	color: white;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 5px 10px;
 	visibility: hidden;
 }
 .favorites:hover .favoritestext {
@@ -259,6 +291,18 @@ label {
 	background-repeat: no-repeat;
 	position: relative;
 	display: inline-block;
+	background-position: 10px 15px;
+}
+.spicytext:before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 10px 12px 10px;
+	border-color: transparent transparent #000 transparent;
+	position: absolute;
+	top: -12px;
+	left: 348px;
 }
 
 .spicytext {
@@ -266,8 +310,13 @@ label {
 	height: 50px;
 	position: absolute;
 	z-index: 1;
-	top: -10px;
-	left: 60px;
+	top: 50px;
+	left: -325px;
+	background-color: lightblue;
+	color: white;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 5px 10px;
 	visibility: hidden;
 }
 .spicy:hover .spicytext {
@@ -280,6 +329,7 @@ label {
 	background-repeat: no-repeat;
 	position: relative;
 	display: inline-block;
+	background-position: 10px 11px;
 }
 .vegantext:before {
 	content: "";
@@ -299,11 +349,13 @@ label {
 	position: absolute;
 	z-index: 1;
 	top: 50px;
-	left: -330px;
+	left: -321px;
 	background-color: lightblue;
 	color: white;
 	border: 1px solid black;
 	border-radius: 10px;
+	padding: 5px 10px;
+	visibility: hidden;
 }
 .vegan:hover .vegantext {
 	visibility: visible;
