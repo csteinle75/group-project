@@ -90,6 +90,28 @@ header {
 	display: flex;
 	margin-bottom: 50px;
 }
+/*Tab Styling*/
+#tabContainer{
+	border-bottom: 1px solid #000;
+	padding: 0 10px;
+	display: flex;
+}
+#menuTab.activeTab, #reservationTab.activeTab{
+	border-bottom: 1px solid #fff;
+}
+#menuTab, #reservationTab{
+	position: relative;
+	top: 1px;
+	flex: 1 1 0;
+	border: 1px solid #000;
+	font-size: 30px;
+	padding: 0 10px;
+	margin: 0px 5px;
+}
+#menu > div.hideTab{
+	display: none;
+}
+/*End of Tab Styling*/
 #menu{
 	width: 75%;
 }
@@ -129,6 +151,7 @@ width: 100%;
 #miscinfo {
 	width: 50%;
 }
+/*Menu Stlying*/
 #menusection{
 	display: flex;
 	flex-flow: column wrap;
@@ -156,6 +179,7 @@ width: 100%;
 .menuItemAlerts{
 	display: inline-block;
 }
+/*End of Menu Styling*/
 #sidePics{
 	width: 25%;
 	margin-right: 20px;
