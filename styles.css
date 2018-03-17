@@ -448,6 +448,7 @@ button {
 select {
 	margin-top: 10px;
 	-webkit-appearance: none;
+	-moz-appearance: none;
 	padding: 7px;
 	background-image: url("assets/arrow.svg");
 	background-repeat: no-repeat;
@@ -474,6 +475,5 @@ select:focus {
 #history {
 	margin-bottom: 69px;
 }
-
 
 
