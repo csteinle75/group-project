@@ -2,6 +2,8 @@ body {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	background-color: #F8EEB9;
+	font-family: cursive;
 }
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -13,6 +15,7 @@ header {
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	height: 100px;
+	background-color: #EBD17D;
 }
 #logo {
 	width: 50%;
@@ -80,11 +83,14 @@ header {
 	width: 50%;
 	padding: 0 20px;
 	text-align: center;
+	background-color: #FFFBF0;
+	padding-top: 2px;
 }
 #news {
 	width: 50%;
 	padding: 0 20px;
 	text-align: center;
+	background-color: #FFFBF0;
 }
 #mainsection{
 	display: flex;
@@ -114,12 +120,15 @@ header {
 /*End of Tab Styling*/
 #menu{
 	width: 75%;
+	background-color: #FFFBF0;
 }
 #reservations {
 	width: 50%;
+	padding: 30px;
+	background-color: #FFFBF0;
 }
 #restitlediv {
-width: 100%;
+	width: 100%;
 }
 #partydiv {
 	width: 100%;
@@ -150,7 +159,9 @@ width: 100%;
 }
 #miscinfo {
 	width: 50%;
+	padding: 30px;
 }
+
 /*Menu Stlying*/
 #menusection{
 	display: flex;
@@ -227,9 +238,12 @@ footer {
 	width: 100%;
 	text-align: center;
 	padding-bottom: 20px;
+	background-color: #EBD17D;
+	padding-top: 15px;
 }
 label {
 	display: block;
+	margin-top: 20px;
 }
 #reservationsection{
 	display: flex;
@@ -256,13 +270,13 @@ label {
 }
 .allergiestext {
 	width: 400px;
-	height: 65px;
+	height: 85px;
 	position: absolute;
 	z-index: 1;
 	top: 50px;
 	left: -325px;
-	background-color: lightblue;
-	color: white;
+	background-color: #F8EEB9;
+	color: black;
 	border: 1px solid black;
 	border-radius: 10px;
 	padding: 5px 10px;
@@ -293,13 +307,13 @@ label {
 }
 .favoritestext {
 	width: 400px;
-	height: 50px;
+	height: 62px;
 	position: absolute;
 	z-index: 1;
 	top: 50px;
 	left: -325px;
-	background-color: lightblue;
-	color: white;
+	background-color: #F8EEB9;
+	color: black;
 	border: 1px solid black;
 	border-radius: 10px;
 	padding: 5px 10px;
@@ -331,13 +345,13 @@ label {
 
 .spicytext {
 	width: 400px;
-	height: 50px;
+	height: 63px;
 	position: absolute;
 	z-index: 1;
 	top: 50px;
 	left: -325px;
-	background-color: lightblue;
-	color: white;
+	background-color: #F8EEB9;
+	color: black;
 	border: 1px solid black;
 	border-radius: 10px;
 	padding: 5px 10px;
@@ -369,13 +383,13 @@ label {
 
 .vegantext {
 	width: 400px;
-	height: 50px;
+	height: 60px;
 	position: absolute;
 	z-index: 1;
 	top: 50px;
 	left: -321px;
-	background-color: lightblue;
-	color: white;
+	background-color: #F8EEB9;
+	color: black;
 	border: 1px solid black;
 	border-radius: 10px;
 	padding: 5px 10px;
@@ -384,19 +398,82 @@ label {
 .vegan:hover .vegantext {
 	visibility: visible;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+#acceptedlogos {
+	background-image: url("assets/payments.jpg");
+	height: 70px;
+	width: 250px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-top: -15px;
+}
+#dininglogo {
+	background-image: url("assets/server.svg");
+	height: 50px;
+	width: 50px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: -25px;
+}
+#cuisinelogo {
+	background-image: url("assets/knifefork.svg");
+	height: 50px;
+	width: 50px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: -15px;
+}
+#dresslogo {
+	background-image: url("assets/suit.svg");
+	height: 50px;
+	width: 50px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: -15px;
+}
+#paymentlogo {
+	background-image: url("assets/cash.svg");
+	height: 50px;
+	width: 50px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: -20px;
+}
+.resss {
+	display: inline-block;
+}
+button {
+	margin-top: 20px;
+	padding: 7px;
+}
+select {
+	margin-top: 10px;
+	-webkit-appearance: none;
+	padding: 7px;
+	background-image: url("assets/arrow.svg");
+	background-repeat: no-repeat;
+	border-radius: 0px;
+	font-family: cursive;
+	font-size: 12px;
+}
+.largeselect {
+	background-position: 602px 2px;
+	background-size: 30px;
+}
+.smallselect {
+	width: 140px;
+	background-size: 30px;
+	background-position: 107px 3px;
+}
+select:focus {
+	outline: 0;
+}
+#phoneandhours {
+	background-color: #FFFBF0;
+	padding: 20px;
+}
+#history {
+	margin-bottom: 69px;
+}
 
 
 

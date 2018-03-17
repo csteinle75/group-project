@@ -27,7 +27,7 @@ $(document).ready(function(){
 		newsObj = data
 	}).done(function(){
 		newsHTML.innerHTML = `
-		<h3>${newsObj.title}</h3>
+		<h1>${newsObj.title}</h1>
 		<h4>${newsObj.date_published}</h4>
 		<p>${newsObj.post}</p>
 	`		
@@ -63,7 +63,7 @@ $(document).ready(function(){
 									<p class="spicytext">This item is spicy, please handle with care and drink lots of water.</p>
 								</span>
 								<span class="vegan">
-									<p class="vegantext">This item contains no meat and has been prepared without the use of animal products</p>
+									<p class="vegantext">This item contains no meat and has been prepared without the use of animal products.</p>
 								</span>
 							</div>
 						</div>

@@ -8,7 +8,7 @@
 <body>
 	<header>
 		<div id="logo">
-			<div></div><span>Cool Resturant</span>
+			<div></div><span>Aliments Br&#251l&#233</span>
 		</div>
 		<div id="social">
 			<a href="#"><div id="facebook" class="headerlogo"></div></a>
@@ -20,8 +20,8 @@
 	<div id="firstsection">
 		<div id="mainPic"></div>
 		<div id="about">
-			<h1>Our Amazing History</h1>
-			Cool Restaurant has always been the definition of delicious and authentic K'un L'un cuisine. The founder Frank Castle survived a devistating plane crash. Barely alive, he was rescued by locals from a nearby village. He then spent the next 15 years training how to cook fine Tibetan cuisine. After his training he dispatched all the villagers and made his way back to America. He settled in Las Vegas which is known as a food connoisseurs paradise. Thats when he opened the great establishment we know today as Cool Restaurant. 
+			<h1 id="history">Our Amazing History</h1>
+			Aliments Br&#251l&#233 has always been the definition of delicious and authentic K'un L'un cuisine. The founder Frank Castle survived a devistating plane crash. Barely alive, he was rescued by locals from a nearby village. He then spent the next 15 years training how to cook fine Tibetan cuisine. After his training he dispatched all the villagers and made his way back to America. He settled in Las Vegas which is known as a food connoisseurs paradise. Thats when he opened the great establishment we know today as Cool Restaurant. 
 		</div>
 		<div id="news">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem possimus, ea. Nam provident suscipit, delectus numquam distinctio eos reprehenderit adipisci maiores, beatae quidem sit impedit modi, eveniet a placeat vitae!
@@ -42,7 +42,7 @@
 					<div id="restitlediv"><h2>Make a Reservation</h2></div>
 					<div id="partydiv">
 						<label for="partysize">Party Size</label>
-						<select id="partysize" name="partysize" style="cursor: pointer;">
+						<select id="partysize" name="partysize" style="cursor: pointer;" class="largeselect">
 							<option selected disabled="">Choose Size</option>
 							<option value="1">1 &#9785</option>		
 							<option value="2">2</option>
@@ -55,42 +55,10 @@
 						</select>
 					</div>
 					<div>
-						<div id="monthdiv">
-							<label for="month">Month</label>
-							<select id="month" name="month" style="cursor: pointer;">
-								<option selected disabled="">Choose Month</option>
-								<option value="janurary">Janurary</option>
-								<option value="feburary">Feburary</option>
-								<option value="march">March</option>
-								<option value="april">April</option>
-								<option value="may">May</option>
-								<option value="june">June</option>
-								<option value="july">July</option>
-								<option value="august">August</option>
-								<option value="september">September</option>
-								<option value="october">October</option>
-								<option value="november">November</option>
-								<option value="december">December</option>
-							</select>
-						</div>
-						<div id="datediv">
-							<label for="date">Date</label>
-							<select id="date" name="date" style="cursor: pointer;">
-								<option selected disabled="">Choose Date</option>
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-								<option value="6">6</option>
-								<option value="7">7</option>
-								<option value="8">8</option>
-							</select>
-						</div>
 						<div>
 							<div id="monthdiv">
 								<label for="month">Month</label>
-								<select id="month" name="month" style="cursor: pointer;">
+								<select id="month" name="month" style="cursor: pointer;" class="smallselect">
 									<option selected disabled="">Choose Month</option>
 									<option value="janurary">Janurary</option>
 									<option value="feburary">Feburary</option>
@@ -108,7 +76,7 @@
 							</div>
 							<div id="datediv">
 								<label for="date">Date</label>
-								<select id="date" name="date" style="cursor: pointer;">
+								<select id="date" name="date" style="cursor: pointer;" class="smallselect">
 									<option selected disabled="">Choose Date</option>
 									<option value="1">1</option>
 									<option value="2">2</option>
@@ -146,7 +114,7 @@
 						</div>
 						<div id="timediv">
 							<label for="time">Time</label>
-							<select id="time" name="time" style="cursor: pointer;">
+							<select id="time" name="time" style="cursor: pointer;" class="largeselect">
 								<option selected disabled="">Choose Time</option>
 								<option value="4pm">4:00pm</option>
 								<option value="5pm">5:00pm</option>
@@ -163,43 +131,30 @@
 							<button style="cursor: pointer;">Make Reservation</button>
 						</div>
 
-						<div class="allergies">
-							<p class="allergiestext">This item may contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance.</p>
-						</div>
-						<div class="favorites">
-							<p class="favoritestext">We have been doing this a long time and this item has become one of our favorites.</p>
-						</div>
-						<div class="spicy">
-							<p class="spicytext">This item is spicy, please handle with care and drink lots of water.</p>
-						</div>
-						<div class="vegan">
-							<p class="vegantext">This item contains no meat and has been prepared without the use of animal products.</p>
-						</div>
-
 					</div>
 				
 				</div>
 				<div id="miscinfo">
 					<div id="dininglogo"></div>
-					<div>
-						<h3>Dining Style</h3>
+					<div class="misctext">
+						<h3 class="resss">Dining Style -   </h3>
 						<span>Casual Elegant</span>
 					</div>
 					<div id="cuisinelogo"></div>
-					<div>
-						<h3>Cuisine</h3>
+					<div class="misctext">
+						<h3 class="resss">Cuisine -   </h3>
 						<span>Authentic K'un L'un</span>
 					
 						</div>
 						<div id="dresslogo"></div>
-						<div>
-							<h3>Dress code</h3>
+						<div class="misctext">
+							<h3 class="resss">Dress code -   </h3>
 							<span>Business Casual</span>
 						</div>
 						<div id="paymentlogo"></div>
-						<div>
-							<h3>Payment Options</h3>
-							<span>AMEX, Mastercard, Discover, Visa or EBT</span>
+						<div class="misctext">
+							<h3 class="resss">Payment Options</h3>
+							<div id="acceptedlogos"></div>
 						</div>
 					</div>
 			</div> <!--Reservation Section End-->
@@ -230,8 +185,8 @@
 
 		</div>
 		<div id="map">
-			<div>
-				<h3>Cool Restaurant</h3>
+			<div id="phoneandhours">
+				<h3>Aliments Br&#251l&#233</h3>
 				<ul>
 					<li>
 						<h4>Address</h4>
@@ -254,7 +209,7 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ1V9dsprDyIAREIN3z
 		</div>
 	</div>
 	<footer>
-		&#169 Cool Restaurant | Fine Tibetan Cuisine | Las Vegas, NV
+		&#169 Aliments Br&#251l&#233 | Fine Tibetan Cuisine | Las Vegas, NV
 	</footer>
 
 	<script id="dsq-count-scr" src="//coolrestaurant.disqus.com/count.js" async></script> <!--discus added-->
