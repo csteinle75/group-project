@@ -4,6 +4,25 @@ $(document).ready(function(){
 	var newsObj = {}
 	var menuObj = {}
 	var special = 0
+
+
+	//tabs between menu & reservation
+	$('#menuTab').click(function(){
+		$("#reservationTab").removeClass('activeTab');
+		$(this).addClass('activeTab');
+		$("#menusection").removeClass('hideTab');
+		$('#reservationsection').addClass('hideTab');
+	})
+
+	$('#reservationTab').click(function(){
+		$("#menuTab").removeClass('activeTab');
+		$(this).addClass('activeTab');
+		$("#reservationsection").removeClass('hideTab');
+		$('#menusection').addClass('hideTab');
+	})
+
+
+	//grabs news from API
 	$.get('https://json-data.herokuapp.com/restaurant/news/1', function(data){
 		newsObj = data
 	}).done(function(){
@@ -13,17 +32,22 @@ $(document).ready(function(){
 		<p>${newsObj.post}</p>
 	`		
 	})
+	//grabs special from API
 	$.get('https://json-data.herokuapp.com/restaurant/special/1', function(data){
 		special = data.menu_item_id
 	})
+
+
+
+	//grabs menu from API
 	$.get('https://json-data.herokuapp.com/restaurant/menu/1', function(data){
 		menuObj = data
 	}).done(function(){
 		console.log('menu success')		
 		for( const course in menuObj ){
 			menuHTML.append(`<div id=${course}><h2 class="courseTitles">${course}</h2></div>`) //titles each course
-			menuObj[course].forEach(food => 
-				{$(`#${course}`).append(`
+			menuObj[course].forEach(food => { //inserts each menu item from API
+				$(`#${course}`).append(`
 					<div class="menuItemContainer">
 						<h3 class="menuItemName">${food.item} - $${food.price}</h3>
 						<div>
