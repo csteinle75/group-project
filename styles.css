@@ -181,9 +181,12 @@ header {
 #special{
 
 }
-
+.descriptionContainer{
+	display: flex;
+	align-items: center;
+}
 .menuItemName{
-	font-size: 16px;
+	font-size: 19px;
 }
 .menuItemDescription{
 	margin: 0;

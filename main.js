@@ -82,19 +82,17 @@ $(document).ready(function(){
 		console.log('menu success')		
 		for( const course in menuObj ){
 			menuHTML.append(`<div id=${course}><h2 class="courseTitles">${course}</h2></div>`) //titles each course
-			menuObj[course].forEach(food => { //inserts each menu item from API
+			menuObj[course].forEach(food => { //inserts each menu item into page
 				$(`#${course}`).append(`
 					<div class="menuItemContainer">
 						<h3 class="menuItemName">${food.item} - $${food.price}</h3>
-						<div>
+						<div class="descriptionContainer">
 							<p class="menuItemDescription">${food.description}</p>
 							<div class="menuItemAlerts">
-
 								${menuAllergies(food)}
 								${menuFavorite(food)}
 								${menuSpicy(food)}
 								${menuVegan(food)}
-
 							</div>
 						</div>
 					</div>
