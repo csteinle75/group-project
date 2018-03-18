@@ -3,7 +3,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #F8EEB9;
-	font-family: 'Felipa';
+	font-family: cursive, 'Felipa';
 }
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -92,6 +92,7 @@ header {
 	padding: 0 20px;
 	text-align: center;
 	background-color: #FFFBF0;
+	padding-bottom: 10px;
 }
 #mainsection{
 	display: flex;
@@ -461,7 +462,7 @@ select {
 	font-size: 12px;
 }
 .largeselect {
-	background-position: 602px 2px;
+	background-position: 428px 3px;
 	background-size: 30px;
 }
 .smallselect {
@@ -478,5 +479,8 @@ select:focus {
 #history {
 	margin-bottom: 69px;
 }
-
+a {
+	text-decoration: none;
+	color: black;
+}
 

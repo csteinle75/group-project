@@ -30,6 +30,7 @@ $(document).ready(function(){
 		<h1>${newsObj.title}</h1>
 		<h4>${newsObj.date_published}</h4>
 		<p>${newsObj.post}</p>
+		<a href="#">Read More</a>
 	`		
 	})
 	//grabs special from API
@@ -69,7 +70,7 @@ $(document).ready(function(){
 		if(foodObj.vegan){
 			return `
 				<span class="vegan">
-					<p class="vegantext">This item contains no meat and has been prepared without the use of animal products</p>
+					<p class="vegantext">This item contains no meat and has been prepared without the use of animal products.</p>
 				</span>
 			`
 		}else{return ""}
