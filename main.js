@@ -37,7 +37,43 @@ $(document).ready(function(){
 		special = data.menu_item_id
 	})
 
-
+	//displays special icons if menu item has certain 
+	const menuAllergies = function(foodObj){
+		if(foodObj.allergies){
+			return `
+				<span class="allergies">
+					<p class="allergiestext"> This item may contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance.</p>
+				</span>
+			`	
+		} else{return ""}
+	}
+	const menuFavorite = function(foodObj){
+		if(foodObj.favorite){
+				return `
+					<span class="favorites">
+						<p class="favoritestext">We have been doing this a long time and this item has become one of our favorites.</p>
+					</span>
+				`
+		}else{return ""}
+	}
+	const menuSpicy = function(foodObj){
+		if(foodObj.spicy){
+			return `
+				<span class="spicy">
+					<p class="spicytext">This item is spicy, please handle with care and drink lots of water.</p>
+				</span>
+			`
+		}else{return ""}
+	}
+	const menuVegan = function(foodObj){
+		if(foodObj.vegan){
+			return `
+				<span class="vegan">
+					<p class="vegantext">This item contains no meat and has been prepared without the use of animal products</p>
+				</span>
+			`
+		}else{return ""}
+	}
 
 	//grabs menu from API
 	$.get('https://json-data.herokuapp.com/restaurant/menu/1', function(data){
@@ -53,18 +89,10 @@ $(document).ready(function(){
 						<div>
 							<p class="menuItemDescription">${food.description}</p>
 							<div class="menuItemAlerts">
-								<span class="allergies">
-									<p class="allergiestext"> This item may contain shellfish or another item that some people may be allergic to. Please ask your waiter or waitress for assistance.</p>
-								</span>
-								<span class="favorites">
-									<p class="favoritestext">We have been doing this a long time and this item has become one of our favorites.</p>
-								</span>
-								<span class="spicy">
-									<p class="spicytext">This item is spicy, please handle with care and drink lots of water.</p>
-								</span>
-								<span class="vegan">
-									<p class="vegantext">This item contains no meat and has been prepared without the use of animal products</p>
-								</span>
+								${menuAllergies(food)}
+								${menuFavorite(food)}
+								${menuSpicy(food)}
+								${menuVegan(food)}
 							</div>
 						</div>
 					</div>
