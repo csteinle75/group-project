@@ -27,7 +27,7 @@ $(document).ready(function(){
 		newsObj = data
 	}).done(function(){
 		newsHTML.innerHTML = `
-		<h3>${newsObj.title}</h3>
+		<h1>${newsObj.title}</h1>
 		<h4>${newsObj.date_published}</h4>
 		<p>${newsObj.post}</p>
 	`		
@@ -89,10 +89,12 @@ $(document).ready(function(){
 						<div>
 							<p class="menuItemDescription">${food.description}</p>
 							<div class="menuItemAlerts">
+
 								${menuAllergies(food)}
 								${menuFavorite(food)}
 								${menuSpicy(food)}
 								${menuVegan(food)}
+
 							</div>
 						</div>
 					</div>
