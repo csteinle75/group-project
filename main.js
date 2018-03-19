@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	var newsHTML = document.querySelector('#news')
+	var specialHTML = $('#special')
 	var menuHTML = $('#menusection')
 	var newsObj = {}
 	var menuObj = {}
@@ -32,10 +33,57 @@ $(document).ready(function(){
 		<p>${newsObj.post}</p>
 	`		
 	})
-	//grabs special from API
-	$.get('https://json-data.herokuapp.com/restaurant/special/1', function(data){
-		special = data.menu_item_id
-	})
+	
+	//Sets Daily Special on Menu
+	// const isSpecial = function(foodObj){
+	// 	console.log(foodObj.id === special, special)
+	// 	if(foodObj.id === special){
+	// 		return 'Special'
+	// 	}
+	// 	return ""
+	// }
+
+	//builds the special
+	const specialBuild = function(menu){
+		for(const course in menu){
+			menu[course].forEach(food => {
+				if(food.id === special){
+					 specialHTML.append(`
+					 	<h2 class="courseTitles">Daily Special</h2>
+					 	<div id="specialDescriptionContainer">					 		
+					 		<div id="specialDescription"><span class="emphasis">Today's special is:</span> ${food.item} for <span class="emphasis">$${food.price}</span> - ${food.description} </div >  
+					 		<div id="specialImg"></div>
+					 	</div>
+					 	`)
+				}
+				return ""
+			})
+		}
+	}
+	//builds the menu
+	const menuBuild = function(menu){
+		for(const course in menu){
+			menuHTML.append(`<div id=${course}><h2 class="courseTitles">${course}</h2></div>`) //titles each course
+			menu[course].forEach(food => { //inserts each menu item into page
+				$(`#${course}`).append(`
+					<div class="menuItemContainer">
+						<h3 class="menuItemName">${food.item} - $${food.price}</h3>
+						<div class="descriptionContainer">
+							<p class="menuItemDescription">${food.description}</p>
+							<div class="menuItemAlerts">
+								${menuAllergies(food)}
+								${menuFavorite(food)}
+								${menuSpicy(food)}
+								${menuVegan(food)}
+							</div>
+						</div>
+					</div>
+						
+				`)}
+			);
+		}
+	}
+
 
 	//displays special icons if menu item has certain 
 	const menuAllergies = function(foodObj){
@@ -75,32 +123,24 @@ $(document).ready(function(){
 		}else{return ""}
 	}
 
-	//grabs menu from API
-	$.get('https://json-data.herokuapp.com/restaurant/menu/1', function(data){
-		menuObj = data
-	}).done(function(){
-		console.log('menu success')		
-		for( const course in menuObj ){
-			menuHTML.append(`<div id=${course}><h2 class="courseTitles">${course}</h2></div>`) //titles each course
-			menuObj[course].forEach(food => { //inserts each menu item from API
-				$(`#${course}`).append(`
-					<div class="menuItemContainer">
-						<h3 class="menuItemName">${food.item} - $${food.price}</h3>
-						<div>
-							<p class="menuItemDescription">${food.description}</p>
-							<div class="menuItemAlerts">
+	
+	//grabs special from API
+	$.get('https://json-data.herokuapp.com/restaurant/special/1', () => console.log('loaded special')).done(function(specialData){
+		special = specialData.menu_item_id 
+		
+		//grabs menu from API
+		$.get('https://json-data.herokuapp.com/restaurant/menu/1', function(menuData){
+			menuObj = menuData
+		}).done(function(){
+			specialBuild(menuObj)
+			menuBuild(menuObj)
+		}) // menu call
+	}) //special call
+	
 
-								${menuAllergies(food)}
-								${menuFavorite(food)}
-								${menuSpicy(food)}
-								${menuVegan(food)}
+	
 
-							</div>
-						</div>
-					</div>
-					
-				`)}
-			);
-		}
-	})
+
+
+	
 })
