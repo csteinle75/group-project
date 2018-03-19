@@ -117,7 +117,7 @@ $(document).ready(function(){
 		if(foodObj.vegan){
 			return `
 				<span class="vegan">
-					<p class="vegantext">This item contains no meat and has been prepared without the use of animal products</p>
+					<p class="vegantext">This item contains no meat and has been prepared without the use of animal products.</p>
 				</span>
 			`
 		}else{return ""}
