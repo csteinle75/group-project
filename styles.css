@@ -178,12 +178,19 @@ header {
 .menuItemContainer{
 
 }
-#special{
-
-}
-.descriptionContainer{
+.descriptionContainer, #specialDescriptionContainer{
 	display: flex;
 	align-items: center;
+}
+#specialDescriptionContainer{
+	justify-content: space-between;
+}
+.emphasis{
+	font-size: 20px;
+	font-weight: bold;
+}
+#specialDescription{
+	font-size: 18px;
 }
 .menuItemName{
 	font-size: 19px;
@@ -195,6 +202,14 @@ header {
 }
 .menuItemAlerts{
 	display: inline-block;
+}
+#specialImg{
+	width: 190px;
+	height: 125px;
+	margin: 0 80px 0 0;
+	background-image: url("assets/special_small.jpg");
+	background-size: 175px auto;
+	background-position:;
 }
 /*End of Menu Styling*/
 #sidePics{
